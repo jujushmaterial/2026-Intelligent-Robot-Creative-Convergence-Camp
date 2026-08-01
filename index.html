@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>장호원 현장조사에서 시작한 건설현장 안전 로봇 콘셉트 철통이</title>
+  <meta name="description" content="디자인씽킹 학습, 장호원 현장조사, 주민 인터뷰와 직접 관찰, 문제 재정의, 철통이 콘셉트 시뮬레이션으로 이어진 창의융합캠프 프로젝트">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="assets/css/project-v2.css">
+  <link rel="stylesheet" href="assets/css/cheoltongi-page.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-name" href="https://jujushmaterial.github.io/">Sanghyeon Ju</a>
+      <nav class="site-nav" aria-label="Portfolio navigation">
+        <a href="https://jujushmaterial.github.io/">HOME</a>
+        <a href="https://jujushmaterial.github.io/projects.html">PROJECTS</a>
+        <a href="https://github.com/jujushmaterial/2026-Intelligent-Robot-Creative-Convergence-Camp">GITHUB</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="project-hero__inner">
+        <p class="eyebrow">DESIGN THINKING · FIELD RESEARCH · CONCEPT DESIGN</p>
+        <h1>장호원 현장조사에서 시작한<br>건설현장 안전 로봇 콘셉트 ‘철통이’</h1>
+        <p class="hero-summary">
+          사전 가설과 다른 현장 상황을 확인하고 조사 장소를 변경한 뒤, 주민 인터뷰와 직접 관찰을 구분해 문제를 다시 정의했습니다.
+          그 결과를 외국인 건설노동자가 언어와 관계없이 위험을 인지하도록 돕는 지능형 로봇 콘셉트와 인터랙티브 시뮬레이션으로 발전시킨 디자인씽킹 팀 프로젝트입니다.
+        </p>
+
+        <div class="project-meta project-meta--four" aria-label="Project metadata">
+          <div><span>Period</span><strong>2026.06.24–06.26</strong></div>
+          <div><span>Result</span><strong class="status"><i></i>Silver Award · 3rd Place</strong></div>
+          <div><span>Type</span><strong>Design Thinking Team Project</strong></div>
+          <div><span>Output</span><strong>Field Research · Persona/POV · Concept Simulation</strong></div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button button--dark" href="#journey">과정 보기</a>
+          <a class="button" href="documents/interview-plan-original.pdf">인터뷰 계획서</a>
+          <a class="button" href="documents/final-presentation-cheoltongi.pdf">최종 발표자료</a>
+          <a class="button" href="simulation/cheoltongi-fast30/index.html">Concept Simulation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-visual" aria-label="Project visual summary">
+      <div class="hero-visual__image hero-visual__image--field">
+        <img src="assets/images/field-research/janghowon-traditional-market.jpg" alt="현장조사를 위해 방문한 장호원 전통시장">
+      </div>
+      <div class="hero-visual__summary">
+        <h2>프로젝트 요약</h2>
+        <dl>
+          <div><dt>출발점</dt><dd>주차 정산기와 보행 불편을 중심으로 사전 인터뷰 계획 수립</dd></div>
+          <div><dt>현장 변화</dt><dd>예상과 다른 농촌 환경과 인터뷰 조건을 확인하고 조사 장소 변경</dd></div>
+          <div><dt>문제 재정의</dt><dd>주민 인터뷰와 별도의 현장 관찰을 바탕으로 외국인 건설노동자의 안전 문제 탐색</dd></div>
+          <div><dt>결과물</dt><dd>철통이 콘셉트 디자인, 작동 시나리오, Three.js 기반 시각적 프로토타입</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="project-layout">
+      <aside class="toc" aria-label="Page contents">
+        <p>Contents</p>
+        <a href="#overview">Overview</a>
+        <a href="#journey">Design Thinking Journey</a>
+        <a href="#initial">Initial Assumptions</a>
+        <a href="#field">Field Research</a>
+        <a href="#evidence">Interview vs Observation</a>
+        <a href="#reframe">Problem Reframing</a>
+        <a href="#pov">Persona & POV</a>
+        <a href="#concept">Cheoltongi Concept</a>
+        <a href="#simulation">Concept Simulation</a>
+        <a href="#research">Technology Research</a>
+        <a href="#evaluation">Evaluation & Result</a>
+        <a href="#reflection">Reflection & Limits</a>
+        <a href="#resources">Resources</a>
+      </aside>
+
+      <article class="project-article">
+        <section id="overview">
+          <p class="section-label">01 · OVERVIEW</p>
+          <h2>완성된 로봇보다 문제를 다시 배우는 과정</h2>
+          <p>
+            이 프로젝트는 4개 대학 학생이 한 팀으로 참여한 2026 지능형 로봇 산업분야 컨소시엄 창의융합캠프에서 진행했습니다.
+            캠프 과제는 이천 지역에서 해결할 문제를 찾고, 지능형 로봇을 활용한 지속가능한 아이디어를 제안하는 것이었습니다.
+          </p>
+          <p>
+            핵심 성과는 철통이라는 산업용 로봇을 실제 제작한 것이 아닙니다. 디자인씽킹을 학습한 뒤 가설을 세우고,
+            현장에 나가 예상과 다른 조건에 대응하며, 인터뷰와 관찰을 바탕으로 문제를 수정하고 아이디어를 시각적 결과물로 발전시킨 경험입니다.
+          </p>
+          <blockquote>
+            This project documents a design-thinking process that moved from initial assumptions and field research in Janghowon to problem reframing, concept design, and an interactive visual prototype.
+          </blockquote>
+          <figure>
+            <img src="assets/images/camp/dongwon-leaders-academy.jpg" alt="창의융합캠프가 진행된 동원리더스아카데미">
+            <figcaption><a class="venue-link" href="https://www.dwleadersacademy.co.kr/">동원리더스아카데미</a> — 이천시 장호원읍의 캠프 진행 장소.</figcaption>
+          </figure>
+          <h3>Team</h3>
+          <ul class="team-list">
+            <li>광운대학교 이주은</li>
+            <li>단국대학교 이주원</li>
+            <li>숭실대학교 주상현</li>
+            <li>한양대학교 ERICA 이도윤</li>
+          </ul>
+        </section>
+
+        <section id="journey">
+          <p class="section-label">02 · DESIGN THINKING JOURNEY</p>
+          <h2>학습에서 현장조사, 문제 재정의와 발표까지</h2>
+          <p>아이디어를 먼저 정하고 사용자를 끼워 맞추지 않기 위해, 다음 과정을 순서대로 진행했습니다.</p>
+          <div class="journey-grid" aria-label="Design thinking journey">
+            <div class="journey-step"><span>01 · LEARN</span><strong>디자인씽킹 학습</strong><small>사용자와 현장 이해의 중요성 확인</small></div>
+            <div class="journey-step"><span>02 · PLAN</span><strong>사전 가설 수립</strong><small>주차·보행 문제를 중심으로 질문 준비</small></div>
+            <div class="journey-step"><span>03 · EXPLORE</span><strong>장호원 현장조사</strong><small>예상과 다른 농촌 환경 확인</small></div>
+            <div class="journey-step"><span>04 · ADAPT</span><strong>조사 장소 변경</strong><small>교회에서 시장으로 이동</small></div>
+            <div class="journey-step"><span>05 · EMPATHIZE</span><strong>인터뷰·관찰</strong><small>주민 의견과 주변 관찰을 구분</small></div>
+            <div class="journey-step"><span>06 · REFRAME</span><strong>문제 방향 수정</strong><small>외국인 노동자 안전 문제 탐색</small></div>
+            <div class="journey-step"><span>07 · DEFINE</span><strong>Persona · POV</strong><small>사용자 요구와 문제 질문 구체화</small></div>
+            <div class="journey-step"><span>08 · IDEATE</span><strong>철통이 아이디어</strong><small>스캔·경고·대응 기능 통합</small></div>
+            <div class="journey-step"><span>09 · PROTOTYPE</span><strong>시안·시뮬레이션</strong><small>작동 흐름을 시각적으로 표현</small></div>
+            <div class="journey-step"><span>10 · PRESENT</span><strong>발표·Q&A·수상</strong><small>은상 · 전체 3위</small></div>
+          </div>
+        </section>
+
+        <section id="initial">
+          <p class="section-label">03 · INITIAL ASSUMPTIONS</p>
+          <h2>현장에 나가기 전 준비한 가설과 질문</h2>
+          <p>
+            사전 계획에서는 비교적 도심 생활에 가까운 상황을 가정했습니다. 주차 정산기와 같은 기계 사용의 어려움,
+            보행 속도 차이와 횡단보도 이용 문제를 확인하고 로봇 서비스의 필요성을 질문하려 했습니다.
+          </p>
+          <ol class="feature-list">
+            <li><strong>불편한 경험 확인</strong><br>이천에서 생활하면서 개선되기를 바라는 점과 실제로 불편했던 상황을 질문합니다.</li>
+            <li><strong>원인과 미해결 이유 확인</strong><br>문제가 언제 발생하고 왜 지금까지 해결되지 않았는지 구체적으로 확인합니다.</li>
+            <li><strong>사용자 관점의 해결책 확인</strong><br>사용자가 원하는 방식과 제안 서비스의 사용 의향, 개선 의견을 질문합니다.</li>
+          </ol>
+          <p class="note">
+            이 문서는 실제 인터뷰 결과가 아니라 현장조사를 준비하기 위한 초기 계획입니다. 현장에서는 이 계획을 그대로 수행하지 못했고,
+            그 차이가 문제를 다시 바라보는 계기가 되었습니다.
+          </p>
+          <a class="button" href="documents/interview-plan-original.pdf">원본 인터뷰 계획서 보기</a>
+        </section>
+
+        <section id="field">
+          <p class="section-label">04 · FIELD RESEARCH IN JANGHOWON</p>
+          <h2>예상과 다른 환경에서 조사 전략을 수정</h2>
+          <div class="image-pair">
+            <figure>
+              <img src="assets/images/field-research/janghowon-rice-field.jpg" alt="장호원 현장조사 중 확인한 논과 농촌 환경">
+              <figcaption>사전 계획에서 상상한 도심형 환경과 달랐던 장호원의 농촌 환경.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/field-research/janghowon-traditional-market.jpg" alt="조사 장소를 변경해 방문한 장호원 전통시장">
+              <figcaption>현장에서 얻은 정보를 바탕으로 조사 장소를 변경해 방문한 장호원 전통시장.</figcaption>
+            </figure>
+          </div>
+          <ul class="process-list">
+            <li><strong>현장 도착</strong><span>논과 농지가 넓게 분포한 농촌 환경을 직접 확인했습니다.</span></li>
+            <li><strong>첫 장소</strong><span>주민이 모일 것으로 예상한 교회를 방문했지만 별도 행사로 인터뷰 대상자가 거의 없었습니다.</span></li>
+            <li><strong>현장 정보</strong><span>현장에 있던 운전기사님과 대화하며 시장이 열렸다는 정보를 얻었습니다.</span></li>
+            <li><strong>계획 변경</strong><span>처음 정한 장소를 고집하지 않고 장호원 전통시장으로 이동했습니다.</span></li>
+            <li><strong>주민 인터뷰</strong><span>시장 인근 노인 대상 교육시설에서 어르신들의 교통과 여가생활에 관한 의견을 들었습니다.</span></li>
+          </ul>
+        </section>
+
+        <section id="evidence">
+          <p class="section-label">05 · INTERVIEW VS OBSERVATION</p>
+          <h2>주민의 답변과 팀의 직접 관찰을 분리</h2>
+          <p>
+            문제를 과장하거나 인터뷰 내용을 바꾸지 않기 위해, 주민이 직접 말한 내용과 팀이 주변 환경에서 별도로 발견한 내용을 구분했습니다.
+          </p>
+          <div class="comparison-grid">
+            <div class="comparison-card comparison-card--interview">
+              <h3>Resident Interviews</h3>
+              <ul>
+                <li>톡버스 도입 이후 먼 지역으로 이동하는 일반 버스가 부족해졌다는 의견</li>
+                <li>대중교통 이용이 불편하다는 의견</li>
+                <li>지역에서 즐길 수 있는 여가생활이 부족하다는 의견</li>
+              </ul>
+            </div>
+            <div class="comparison-card comparison-card--observation">
+              <h3>Direct Observation</h3>
+              <ul>
+                <li>지역을 이동하며 외국인 노동자가 많이 보인다는 점을 관찰</li>
+                <li>해당 관찰을 주민 인터뷰의 답변으로 해석하지 않음</li>
+                <li>외국인 노동자의 작업환경과 안전 문제를 별도의 2차 조사 주제로 확장</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="reframe">
+          <p class="section-label">06 · PROBLEM REFRAMING</p>
+          <h2>처음 준비한 질문을 버리고 더 적절한 문제로 이동</h2>
+          <div class="reframe-flow" aria-label="Problem reframing flow">
+            <div class="reframe-item"><span>01</span><strong>초기 가설</strong><p>주차 정산기 사용과 보행·횡단보도 불편</p></div>
+            <div class="reframe-item"><span>02</span><strong>실제 현장</strong><p>도심형 생활환경과 다른 장호원의 농촌 특성</p></div>
+            <div class="reframe-item"><span>03</span><strong>주민 인터뷰</strong><p>교통 불편, 장거리 이동 부족, 여가생활 부족</p></div>
+            <div class="reframe-item"><span>04</span><strong>직접 관찰</strong><p>지역에서 외국인 노동자가 많이 보이는 현장 특성</p></div>
+            <div class="reframe-item"><span>05</span><strong>2차 자료조사</strong><p>외국인 노동자의 작업환경과 건설현장 안전 문제 탐색</p></div>
+            <div class="reframe-item"><span>06</span><strong>최종 문제 방향</strong><p>변화하는 건설현장에서 작업자가 언어와 관계없이 위험을 빠르게 인지하고 대응하도록 돕는 방법</p></div>
+          </div>
+          <p class="note">
+            외국인 건설노동자의 안전 문제는 주민 인터뷰에서 직접 나온 결론이 아니라, 현장 관찰 이후 추가 자료조사를 거쳐 확장한 문제 방향입니다.
+          </p>
+        </section>
+
+        <section id="pov">
+          <p class="section-label">07 · PERSONA & POV</p>
+          <h2>발표용 페르소나와 사용자 관점의 질문</h2>
+          <p>
+            최종 발표에서는 문제 상황을 구체화하기 위해 이천의 아파트 공사현장에서 일하는 외국인 건설노동자를 중심으로 페르소나를 구성했습니다.
+            이 인물은 현재 공개 자료 기준으로 실제 인터뷰 대상임이 확인되지 않았으므로, 실제 사용자 사례가 아닌 발표용 페르소나로 표현합니다.
+          </p>
+          <div class="pov-card">
+            <p>“추락 위험 구간에 다가가기 전에 위험 구역을 인지하고 안전하게 근무할 수 있는 현장이 필요하다.”</p>
+          </div>
+          <p>
+            고정된 표지판은 계속 변하는 공사현장 상태를 즉시 반영하기 어렵고, 긴 문장이나 특정 언어에 의존한 경고는 모든 작업자가 빠르게 이해하기 어려울 수 있습니다.
+            이를 바탕으로 다음과 같은 How Might We 질문을 도출했습니다.
+          </p>
+          <blockquote>
+            어떻게 하면 변화하는 건설현장의 위험을 지속적으로 파악하고, 작업자가 언어와 관계없이 위험 구역을 즉시 인지하도록 도울 수 있을까?
+          </blockquote>
+        </section>
+
+        <section id="concept">
+          <p class="section-label">08 · FROM INSIGHT TO CHEOLTONGI</p>
+          <h2>현장 스캔과 시각 경고를 하나의 이동형 시스템으로 통합</h2>
+          <p>
+            철통이는 건설현장을 이동하며 구조물과 작업환경을 스캔하고, 위험 구역을 빛과 프로젝션으로 알려 작업자의 안전을 돕는 지능형 로봇 시스템 콘셉트입니다.
+          </p>
+          <figure>
+            <img src="assets/images/project/cheoltongi-concept-overview.jpg" alt="철통이 건설현장 안전 로봇 시스템 콘셉트 개략도">
+            <figcaption>Cheoltongi Concept Design — 실제 제작된 하드웨어가 아닌 제안 시스템의 콘셉트 렌더링.</figcaption>
+          </figure>
+          <div class="result-strip">
+            <div><span>Awareness</span><strong>현장 지속 스캔</strong></div>
+            <div><span>Data</span><strong>Digital Twin 누적</strong></div>
+            <div><span>Warning</span><strong>위험 구역 프로젝션</strong></div>
+            <div><span>Response</span><strong>추락 예방·대응 제안</strong></div>
+          </div>
+          <p>
+            평지에서의 이동 효율과 계단·단차 대응을 함께 고려해 바퀴와 다리를 결합한 이동 구조를 시각화했습니다.
+            또한 LiDAR, Camera, IMU를 이용한 현장 인식과 서버·관리자 화면 연동 방향을 제안했습니다.
+          </p>
+          <div class="concept-status" aria-label="Concept status">
+            <div class="is-positive"><span>Type</span><strong>Design Thinking Project</strong></div>
+            <div class="is-positive"><span>Output</span><strong>Concept Design · Interactive Simulation</strong></div>
+            <div class="is-limit"><span>Not</span><strong>Verified Safety Device</strong></div>
+            <div class="is-limit"><span>Not</span><strong>Physical Robot Prototype</strong></div>
+          </div>
+        </section>
+
+        <section id="simulation">
+          <p class="section-label">09 · CONCEPT SIMULATION</p>
+          <h2>작동 흐름을 설명하기 위한 인터랙티브 시각적 프로토타입</h2>
+          <p>
+            Three.js 기반 시뮬레이션은 철통이의 사용자 시나리오와 정보 흐름을 발표에서 직관적으로 설명하기 위해 제작했습니다.
+            실제 구조해석, 센서 정확도, 인체 보호 성능을 검증하는 프로그램은 아닙니다.
+          </p>
+          <div class="simulation-flow" aria-label="Simulation scenario flow">
+            <div>현장 스캔</div>
+            <div>구조 데이터 누적</div>
+            <div>위험도 분석 표현</div>
+            <div>현장 프로젝션 경고</div>
+            <div>작업자 추락 감지</div>
+            <div>구조 장치 전개</div>
+          </div>
+          <p class="note">
+            시뮬레이션은 별도 페이지에서 실행합니다. Three.js를 CDN으로 불러오므로 인터넷 연결이 필요하며, 브라우저 환경에 따라 로컬 서버 실행이 필요할 수 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--dark" href="simulation/cheoltongi-fast30/index.html">시뮬레이션 실행</a>
+            <a class="button" href="downloads/cheoltongi-fast30.zip">원본 ZIP 다운로드</a>
+            <a class="button" href="simulation/cheoltongi-fast30/README.txt">실행 안내</a>
+          </div>
+        </section>
+
+        <section id="research">
+          <p class="section-label">10 · EXISTING TECHNOLOGY RESEARCH</p>
+          <h2>아이디어의 현실성과 한계를 확인하기 위한 Q&A 준비</h2>
+          <p>
+            아이디어를 공상으로만 남기지 않기 위해 기존 이동형 로봇, 현장 스캐닝, Digital Twin, 센서와 연산 분산 방식 등을 조사했습니다.
+            조사 내용은 본 프로젝트에서 구현하거나 검증한 사양이 아니라, 질문에 대비해 구현 가능성과 제한 조건을 검토한 Research Appendix입니다.
+          </p>
+          <div class="research-tags" aria-label="Researched technologies">
+            <span>Quadruped Robots</span>
+            <span>LiDAR · Camera · IMU</span>
+            <span>SLAM</span>
+            <span>Scan-to-BIM</span>
+            <span>Construction Digital Twin</span>
+            <span>Embedded GPU</span>
+            <span>Central Server</span>
+            <span>Dusty Environment</span>
+          </div>
+          <ul class="feature-list">
+            <li><strong>이동 플랫폼</strong><br>계단과 장애물이 있는 환경에서 순찰·점검에 활용되는 사족보행 로봇 사례를 조사했습니다.</li>
+            <li><strong>현장 데이터</strong><br>SLAM, Scan-to-BIM과 Digital Twin을 이용해 설계 상태와 실제 현장을 연결하는 방향을 검토했습니다.</li>
+            <li><strong>환경과 연산 한계</strong><br>분진에 의한 LiDAR 성능 저하, 센서 융합 필요성, 로봇과 중앙 서버의 분산 처리 방향을 검토했습니다.</li>
+          </ul>
+          <p class="note">
+            당시 조사한 가격, 반응시간과 고정력 등의 수치는 현재 확정 사양이나 실험 결과로 사용하지 않습니다.
+          </p>
+        </section>
+
+        <section id="evaluation">
+          <p class="section-label">11 · EVALUATION & RESULT</p>
+          <h2>사용자 중심 문제정의와 아이디어의 유용성을 함께 평가</h2>
+          <p>
+            평가기준은 로봇 기술 활용, 이천 지역과의 관련성 및 지속가능성, 사용자 분석과 필요 반영, 아이디어의 매력성과 유용성의 네 관점으로 정리했습니다.
+          </p>
+          <div class="award-grid">
+            <figure>
+              <img src="assets/images/evaluation/evaluation-criteria.svg" alt="창의융합캠프 평가기준 네 가지">
+              <figcaption>사전 인터뷰 계획서 첫 페이지의 평가 메모를 가독성 있게 재구성.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/evaluation/silver-award-certificate.jpg" alt="2026 지능형 로봇 산업분야 컨소시엄 창의융합캠프 은상 상장">
+              <figcaption>2026 지능형 로봇 산업분야 컨소시엄 창의융합캠프 은상 상장.</figcaption>
+            </figure>
+          </div>
+          <div class="award-result">
+            <span>Team Result</span>
+            <strong>Silver Award · 3rd Place</strong>
+          </div>
+          <p>
+            최종 발표는 문제정의와 POV, 해결책, 제품 시안, 기대효과와 질의응답 순으로 구성했습니다.
+            발표 본문과 Q&A 사전 조사자료는 하나의 PDF에 포함되어 있지만, 포트폴리오에서는 본 발표와 Research Appendix의 성격을 구분합니다.
+          </p>
+          <a class="button" href="documents/final-presentation-cheoltongi.pdf">최종 발표자료 보기</a>
+        </section>
+
+        <section id="reflection">
+          <p class="section-label">12 · REFLECTION & LIMITATIONS</p>
+          <h2>현장에서 더 적절한 질문으로 바꾸는 경험</h2>
+          <div class="reflection-grid">
+            <div class="reflection-card reflection-card--learning">
+              <h3>What I Learned</h3>
+              <ul>
+                <li>사전 가설은 정답이 아니라 현장조사의 출발점이다.</li>
+                <li>예상한 장소에서 조사하지 못할 때 현장 정보에 따라 계획을 바꿀 수 있어야 한다.</li>
+                <li>인터뷰 답변과 주변 관찰은 서로 다른 근거로 구분해야 한다.</li>
+                <li>처음 생각한 문제를 버리고 다시 정의하는 것도 문제 해결의 일부다.</li>
+                <li>추상적인 아이디어는 시안, 시나리오와 시뮬레이션을 통해 구체화할 수 있다.</li>
+              </ul>
+            </div>
+            <div class="reflection-card reflection-card--limits">
+              <h3>Limitations</h3>
+              <ul>
+                <li>인터뷰 대상과 범위가 제한적이었다.</li>
+                <li>외국인 노동자를 직접 인터뷰한 자료가 현재 확인되지 않는다.</li>
+                <li>실제 로봇 하드웨어를 제작하거나 현장 실증을 진행하지 않았다.</li>
+                <li>구조 하중, 센서 정확도, 반응시간과 인체 안전성을 검증하지 않았다.</li>
+                <li>시뮬레이션은 물리 검증 도구가 아닌 개념 전달용 프로토타입이다.</li>
+              </ul>
+            </div>
+          </div>
+          <blockquote>
+            처음 세운 질문에 답을 얻는 것보다, 현장을 통해 더 적절한 질문으로 바꾸는 과정이 중요하다는 점을 배웠습니다.
+          </blockquote>
+        </section>
+
+        <section id="resources">
+          <p class="section-label">13 · RESOURCES</p>
+          <h2>원본 자료와 결과물</h2>
+          <div class="resource-list">
+            <a href="documents/interview-plan-original.pdf"><strong>Interview Plan</strong><span>현장조사 전 준비한 초기 가설과 질문</span></a>
+            <a href="documents/final-presentation-cheoltongi.pdf"><strong>Final Presentation</strong><span>본 발표와 Q&A 대비 조사자료</span></a>
+            <a href="simulation/cheoltongi-fast30/index.html"><strong>Concept Simulation</strong><span>Three.js 기반 인터랙티브 시각적 프로토타입</span></a>
+            <a href="https://github.com/jujushmaterial/2026-Intelligent-Robot-Creative-Convergence-Camp"><strong>GitHub Repository</strong><span>문서, 이미지, 시뮬레이션 소스와 상세 기록</span></a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://jujushmaterial.github.io/">← Portfolio Home</a>
+    <a href="https://github.com/jujushmaterial/2026-Intelligent-Robot-Creative-Convergence-Camp">GitHub Repository</a>
+    <span>Sanghyeon Ju © 2026</span>
+  </footer>
+</body>
+</html>
