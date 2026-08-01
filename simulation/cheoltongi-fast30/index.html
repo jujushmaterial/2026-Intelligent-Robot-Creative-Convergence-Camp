@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FallGuard Twin Swarm v3.1.2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="appShell">
+    <header class="topbar">
+      <div>
+        <h1>FallGuard Twin Swarm v3.1.2</h1>
+        <p>시공 중 골조 스캐닝 · 철근 누락 검측 · 위험도 Heatmap · 현장 로봇 경고 시뮬레이터</p>
+      </div>
+      <div class="statusPill" id="globalStatus">READY</div>
+    </header>
+
+    <main class="workspace">
+      <aside class="controlPanel">
+        <h2>Scenario Control</h2>
+        <button id="btnAuto" class="primary">▶ 자동 시연</button>
+        <button id="btnPause" class="secondary" disabled>⏸ 일시정지</button>
+        <button id="btnStage1">1. 골조 작업 시작</button>
+        <button id="btnScan">2. 로봇 스캔 시작</button>
+        <button id="btnSync">3. 관리자 모니터 동기화</button>
+        <button id="btnRisk">4. 하중/위험도 Heatmap 표시</button>
+        <button id="btnAudit">5. 철근 누락 검측/관리자 확인</button>
+        <button id="btnWorker">6. 현장 로봇 경고/프로젝션</button>
+        <button id="btnFall">7. 외벽 추락 시뮬레이션</button>
+        <button id="btnNet">8. 고치형 투망 전개</button>
+        <button id="btnReset" class="ghost">↺ 초기화</button>
+
+        <div class="legendBox">
+          <h3>Legend</h3>
+          <div><span class="dot safe"></span> 안전/스캔 완료</div>
+          <div><span class="dot warn"></span> 주의/감리 확인 필요</div>
+          <div><span class="dot danger"></span> 추락 위험</div>
+          <div><span class="dot memory"></span> 골조 Memory Layer</div>
+        </div>
+
+        <div class="captionBox">
+          <strong>현재 장면</strong>
+          <p id="captionText">대기 중입니다. 자동 시연을 누르면 전체 시나리오가 진행됩니다.</p>
+        </div>
+      </aside>
+
+      <section class="simArea" id="simRoot">
+        <section class="fieldPanel">
+          <div class="panelTitle">
+            <span>LEFT · 실제 건설현장</span>
+            <small>로봇이 골조 위/바닥을 이동하며 상시 스캔</small>
+          </div>
+          <div id="fieldCanvas" class="canvasHost"></div>
+          <div class="fieldOverlay">
+            <div id="siteTag" class="floatingTag">Construction Site · 3F Structure</div>
+            <div id="fallAlert" class="alertBanner hidden">FALL RISK DETECTED</div>
+          </div>
+        </section>
+
+        <section class="officePanel">
+          <div class="panelTitle">
+            <span>RIGHT · 사무실 관리자 모니터</span>
+            <small>As-built Digital Twin · 감리/안전 대시보드</small>
+          </div>
+          <div class="monitorFrame">
+            <div id="monitorCanvas" class="monitorCanvasHost"></div>
+            <div class="monitorHUD">
+              <div class="hudTitle">OFFICE CONTROL MONITOR</div>
+              <div class="metric"><span>Construction Progress</span><b id="metricProgress">0%</b></div>
+              <div class="bar"><i id="barProgress"></i></div>
+              <div class="metric"><span>Scan Coverage</span><b id="metricScan">0%</b></div>
+              <div class="bar"><i id="barScan"></i></div>
+              <div class="metric"><span>Structural Risk</span><b id="metricRisk">LOW</b></div>
+              <div class="metric"><span>Defect Suspicion</span><b id="metricDefect">NONE</b></div>
+              <div class="metric"><span>Design vs Scan</span><b id="metricDesign">MATCH</b></div>
+              <div class="metric"><span>Robot Command</span><b id="metricCommand">STANDBY</b></div>
+              <div class="metric"><span>Worker Safety</span><b id="metricWorker">NORMAL</b></div>
+              <div id="auditCard" class="auditCard hidden">
+                <b>REBAR LAYER MISMATCH</b>
+                <span>설계: 상·하부 2겹 철근</span>
+                <span>스캔: 하부 1겹만 감지</span>
+                <span>조치: 관리자 승인 → 현장 로봇 경고</span>
+              </div>
+            </div>
+            <div class="logPanel">
+              <div class="logTitle">Real-time Audit Log</div>
+              <div id="eventLog"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <div id="packetLayer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

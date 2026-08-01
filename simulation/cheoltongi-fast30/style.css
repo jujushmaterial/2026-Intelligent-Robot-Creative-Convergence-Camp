@@ -1,0 +1,148 @@
+:root {
+  --bg: #07111f;
+  --panel: rgba(13, 24, 42, 0.92);
+  --panel2: rgba(9, 18, 33, 0.96);
+  --line: rgba(150, 185, 230, 0.24);
+  --text: #e8f1ff;
+  --muted: #93a7c1;
+  --blue: #5fb8ff;
+  --green: #73f0a8;
+  --yellow: #ffd166;
+  --red: #ff5d73;
+  --purple: #c79cff;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: radial-gradient(circle at 20% 0%, #123056 0%, var(--bg) 42%, #030711 100%); color: var(--text); font-family: Pretendard, Segoe UI, Apple SD Gothic Neo, Malgun Gothic, Arial, sans-serif; overflow: hidden; }
+button { font-family: inherit; }
+
+#appShell { height: 100vh; display: flex; flex-direction: column; }
+.topbar { height: 78px; padding: 14px 22px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: rgba(4, 10, 20, 0.78); backdrop-filter: blur(10px); }
+.topbar h1 { margin: 0; font-size: 22px; letter-spacing: 0.2px; }
+.topbar p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+.statusPill { padding: 8px 14px; border: 1px solid rgba(95,184,255,0.48); border-radius: 999px; color: #cfeaff; background: rgba(95,184,255,0.10); font-weight: 700; font-size: 13px; }
+
+.workspace { flex: 1; min-height: 0; display: grid; grid-template-columns: 245px 1fr; }
+.controlPanel { padding: 16px 14px; border-right: 1px solid var(--line); background: rgba(5, 12, 24, 0.82); overflow: auto; }
+.controlPanel h2 { margin: 0 0 12px; font-size: 17px; }
+.controlPanel button { width: 100%; margin: 5px 0; padding: 10px 11px; border-radius: 11px; border: 1px solid rgba(136, 167, 210, 0.25); background: rgba(255,255,255,0.055); color: var(--text); text-align: left; cursor: pointer; transition: transform 0.1s ease, border 0.15s ease, background 0.15s ease; }
+.controlPanel button:hover { transform: translateY(-1px); border-color: rgba(95,184,255,0.55); background: rgba(95,184,255,0.11); }
+.controlPanel button.primary { background: linear-gradient(135deg, rgba(95,184,255,0.35), rgba(115,240,168,0.16)); border-color: rgba(95,184,255,0.65); font-weight: 800; }
+.controlPanel button.secondary { background: rgba(255, 209, 102, 0.095); border-color: rgba(255, 209, 102, 0.36); font-weight: 750; }
+.controlPanel button:disabled { opacity: 0.42; cursor: not-allowed; transform: none; }
+.controlPanel button:disabled:hover { transform: none; border-color: rgba(136, 167, 210, 0.25); background: rgba(255,255,255,0.055); }
+.controlPanel button.ghost { margin-top: 12px; color: #d8e8ff; border-color: rgba(255,255,255,0.16); }
+.legendBox, .captionBox { margin-top: 18px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: rgba(9, 18, 32, 0.78); }
+.legendBox h3 { margin: 0 0 8px; font-size: 14px; }
+.legendBox div { margin: 7px 0; color: var(--muted); font-size: 12px; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; box-shadow: 0 0 10px currentColor; }
+.dot.safe { background: var(--green); color: var(--green); }
+.dot.warn { background: var(--yellow); color: var(--yellow); }
+.dot.danger { background: var(--red); color: var(--red); }
+.dot.memory { background: var(--purple); color: var(--purple); }
+.captionBox strong { display: block; margin-bottom: 6px; font-size: 13px; }
+.captionBox p { margin: 0; color: #c7d4e7; font-size: 12px; line-height: 1.5; }
+
+.simArea { position: relative; min-width: 0; display: grid; grid-template-columns: 66% 34%; gap: 10px; padding: 10px; }
+.fieldPanel, .officePanel { position: relative; min-width: 0; min-height: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--panel); box-shadow: 0 18px 45px rgba(0,0,0,0.25); }
+.panelTitle { height: 42px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; border-bottom: 1px solid var(--line); background: rgba(7, 15, 28, 0.88); }
+.panelTitle span { font-weight: 800; font-size: 13px; }
+.panelTitle small { color: var(--muted); font-size: 11px; }
+.canvasHost, .monitorCanvasHost { position: relative; flex: 1; min-height: 0; }
+.canvasHost canvas, .monitorCanvasHost canvas { display: block; width: 100%; height: 100%; }
+.fieldOverlay { position: absolute; inset: 42px 0 0; pointer-events: none; }
+.floatingTag { position: absolute; top: 14px; left: 14px; padding: 9px 12px; border-radius: 999px; border: 1px solid rgba(95,184,255,0.38); color: #d7ecff; background: rgba(5, 12, 24, 0.65); font-size: 12px; font-weight: 700; }
+.alertBanner { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); padding: 10px 18px; border-radius: 12px; background: rgba(255, 65, 89, 0.92); color: white; font-weight: 900; letter-spacing: 1px; box-shadow: 0 0 26px rgba(255,93,115,0.45); animation: pulseAlert 0.65s infinite alternate; }
+.hidden { display: none !important; }
+@keyframes pulseAlert { from { opacity: 0.72; } to { opacity: 1; transform: translateX(-50%) scale(1.035); } }
+
+/* v3.1.2: 관리자 모니터 HUD와 Audit Log가 겹치지 않도록 레이아웃을 세로 플렉스로 고정 */
+.monitorFrame {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  background: #030812;
+  display: flex;
+  flex-direction: column;
+}
+.monitorCanvasHost {
+  flex: 0 0 38%;
+  min-height: 180px;
+  border-bottom: 1px solid rgba(95,184,255,0.15);
+}
+.monitorHUD {
+  flex: 0 0 auto;
+  padding: 9px 12px 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  border-bottom: 1px solid rgba(95,184,255,0.12);
+}
+.hudTitle { color: var(--blue); font-size: 12px; font-weight: 900; letter-spacing: 0.8px; }
+.metric { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #cbd8e9; font-size: 11.5px; line-height: 1.25; }
+.metric b { color: white; font-size: 11.5px; }
+.bar { width: 100%; height: 6px; background: rgba(255,255,255,0.08); border-radius: 99px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0%; border-radius: 99px; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width 0.5s ease; }
+.logPanel {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  flex: 1 1 126px;
+  min-height: 118px;
+  margin: 10px 12px 12px;
+  padding: 10px;
+  border-radius: 13px;
+  border: 1px solid rgba(95,184,255,0.20);
+  background: rgba(5, 11, 22, 0.86);
+  overflow: hidden;
+}
+.logTitle { margin-bottom: 6px; color: #b7dfff; font-size: 12px; font-weight: 800; }
+#eventLog { height: calc(100% - 22px); overflow: hidden; color: #bdd0e7; font-family: Consolas, Menlo, monospace; font-size: 11px; line-height: 1.45; }
+.logItem { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.logItem.warn { color: var(--yellow); }
+.logItem.danger { color: var(--red); }
+.logItem.safe { color: var(--green); }
+.logItem.memory { color: var(--purple); }
+.logItem.audit { color: #ff7b8f; font-weight: 800; }
+
+#packetLayer { position: fixed; inset: 78px 0 0 245px; pointer-events: none; overflow: hidden; }
+.packet { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 14px var(--blue); opacity: 0.95; animation: packetFly 1.25s linear forwards; }
+.packet::after { content: ''; position: absolute; right: 7px; top: 3px; width: 48px; height: 2px; background: linear-gradient(90deg, transparent, rgba(95,184,255,0.75)); }
+@keyframes packetFly { from { transform: translateX(0) scale(0.8); opacity: 0; } 12% { opacity: 1; } to { transform: translateX(55vw) scale(1.1); opacity: 0; } }
+
+@media (max-width: 980px) {
+  body { overflow: auto; }
+  #appShell { min-height: 100vh; height: auto; }
+  .workspace { grid-template-columns: 1fr; }
+  .controlPanel { border-right: 0; border-bottom: 1px solid var(--line); }
+  .simArea { min-height: 980px; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+  #packetLayer { display: none; }
+}
+
+
+.auditBadge {
+  position: absolute;
+  right: 14px;
+  top: 58px;
+  max-width: 310px;
+  padding: 10px 12px;
+  border-radius: 13px;
+  border: 1px solid rgba(255,93,115,0.45);
+  background: rgba(70, 8, 18, 0.74);
+  color: #ffe8ec;
+  font-size: 12px;
+  line-height: 1.45;
+  box-shadow: 0 0 28px rgba(255,93,115,0.22);
+}
+
+.auditCard {
+  margin-top: 5px;
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 93, 115, 0.55);
+  border-radius: 11px;
+  background: linear-gradient(135deg, rgba(255,93,115,0.16), rgba(255,209,102,0.08));
+  box-shadow: 0 0 20px rgba(255,93,115,0.18);
+}
+.auditCard b { display: block; color: #ff8ea0; font-size: 11px; margin-bottom: 4px; letter-spacing: 0.5px; }
+.auditCard span { display: block; color: #ffdce2; font-size: 11px; line-height: 1.35; }
