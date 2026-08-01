@@ -1,14 +1,16 @@
 # Project Images
 
-Upload Cheoltongi concept images, cropped presentation visuals, and simulation screenshots here.
+철통이 콘셉트 이미지, 발표자료 크롭과 시뮬레이션 캡처를 보관한다.
 
-Required file:
+## Current File
 
-```text
-cheoltongi-concept-overview.jpg
-```
+[`cheoltongi-concept-overview.jpg`](cheoltongi-concept-overview.jpg)
 
-Recommended presentation crops:
+- 철통이 기술과 기능 구성을 설명하는 콘셉트 이미지
+- 실제 제작된 로봇 사진이 아님
+- `Cheoltongi Concept Design` 또는 `Concept Rendering`으로 표기
+
+## Recommended Presentation Crops
 
 ```text
 problem-background.jpg
@@ -20,7 +22,7 @@ sustainability.jpg
 existing-technology-research.jpg
 ```
 
-Recommended simulation screenshots:
+## Recommended Simulation Screenshots
 
 ```text
 simulation-field-scan.jpg
@@ -29,4 +31,4 @@ simulation-risk-projection.jpg
 simulation-rescue-scene.jpg
 ```
 
-All concept images must be described as concept renderings or visual prototypes, not photographs of a completed robot.
+모든 콘셉트 이미지는 완성된 제품 사진이나 검증된 안전장치로 오해되지 않도록 설명한다.
