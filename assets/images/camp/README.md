@@ -1,11 +1,7 @@
 # Camp Images
 
-Upload the actual camp venue and camp activity photos here.
+## Current File
 
-Required file:
+[`dongwon-leaders-academy.jpg`](dongwon-leaders-academy.jpg)
 
-```text
-dongwon-leaders-academy.jpg
-```
-
-This image documents the camp venue at Dongwon Leaders Academy in Icheon.
+동원리더스아카데미 야외 전경을 기록한 실제 사진이며, 캠프 진행 장소를 보여준다.
