@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">창의융합캠프 평가기준</title>
+  <desc id="desc">로봇 기술 활용, 지역성과 지속가능성, 사용자 중심 문제정의, 아이디어의 매력성과 유용성의 네 가지 평가 관점</desc>
+  <rect width="1600" height="1000" fill="#F6F7F9"/>
+  <rect x="80" y="64" width="1440" height="152" rx="28" fill="#17233C"/>
+  <text x="128" y="138" fill="#FFFFFF" font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, sans-serif" font-size="62" font-weight="700">창의융합캠프 평가기준</text>
+  <text x="130" y="188" fill="#DCE6F5" font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, sans-serif" font-size="28">아이디어를 평가한 네 가지 핵심 관점</text>
+
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, sans-serif">
+    <rect x="88" y="282" width="690" height="308" rx="26" fill="#E4E8ED"/>
+    <rect x="80" y="272" width="690" height="308" rx="26" fill="#FFFFFF" stroke="#DDE2E8" stroke-width="2"/>
+    <rect x="80" y="272" width="16" height="308" rx="8" fill="#2F80ED"/>
+    <circle cx="162" cy="346" r="37" fill="#2F80ED"/>
+    <text x="162" y="357" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700">01</text>
+    <text x="222" y="358" fill="#17233C" font-size="34" font-weight="700">로봇 기술 활용</text>
+    <line x1="128" y1="404" x2="722" y2="404" stroke="#DDE2E8" stroke-width="2"/>
+    <text x="134" y="472" fill="#5F6B7A" font-size="25">문제 해결 과정에</text>
+    <text x="134" y="520" fill="#5F6B7A" font-size="25">로봇 기술을 적절히 활용했는가</text>
+
+    <rect x="838" y="282" width="690" height="308" rx="26" fill="#E4E8ED"/>
+    <rect x="830" y="272" width="690" height="308" rx="26" fill="#FFFFFF" stroke="#DDE2E8" stroke-width="2"/>
+    <rect x="830" y="272" width="16" height="308" rx="8" fill="#18A999"/>
+    <circle cx="912" cy="346" r="37" fill="#18A999"/>
+    <text x="912" y="357" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700">02</text>
+    <text x="972" y="358" fill="#17233C" font-size="34" font-weight="700">지역성 · 지속가능성</text>
+    <line x1="878" y1="404" x2="1472" y2="404" stroke="#DDE2E8" stroke-width="2"/>
+    <text x="884" y="472" fill="#5F6B7A" font-size="25">이천 지역과 관련이 있으며</text>
+    <text x="884" y="520" fill="#5F6B7A" font-size="25">지속가능한 방향을 제안했는가</text>
+
+    <rect x="88" y="636" width="690" height="308" rx="26" fill="#E4E8ED"/>
+    <rect x="80" y="626" width="690" height="308" rx="26" fill="#FFFFFF" stroke="#DDE2E8" stroke-width="2"/>
+    <rect x="80" y="626" width="16" height="308" rx="8" fill="#F2994A"/>
+    <circle cx="162" cy="700" r="37" fill="#F2994A"/>
+    <text x="162" y="711" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700">03</text>
+    <text x="222" y="712" fill="#17233C" font-size="34" font-weight="700">사용자 중심 문제정의</text>
+    <line x1="128" y1="758" x2="722" y2="758" stroke="#DDE2E8" stroke-width="2"/>
+    <text x="134" y="826" fill="#5F6B7A" font-size="25">사용자 분석이 정확하고</text>
+    <text x="134" y="874" fill="#5F6B7A" font-size="25">사용자의 실제 필요가 반영되었는가</text>
+
+    <rect x="838" y="636" width="690" height="308" rx="26" fill="#E4E8ED"/>
+    <rect x="830" y="626" width="690" height="308" rx="26" fill="#FFFFFF" stroke="#DDE2E8" stroke-width="2"/>
+    <rect x="830" y="626" width="16" height="308" rx="8" fill="#9B51E0"/>
+    <circle cx="912" cy="700" r="37" fill="#9B51E0"/>
+    <text x="912" y="711" text-anchor="middle" fill="#FFFFFF" font-size="30" font-weight="700">04</text>
+    <text x="972" y="712" fill="#17233C" font-size="34" font-weight="700">아이디어의 매력성과 유용성</text>
+    <line x1="878" y1="758" x2="1472" y2="758" stroke="#DDE2E8" stroke-width="2"/>
+    <text x="884" y="826" fill="#5F6B7A" font-size="25">아이디어가 매력적이며</text>
+    <text x="884" y="874" fill="#5F6B7A" font-size="25">실제로 유용한 해결책인가</text>
+
+    <text x="800" y="974" text-anchor="middle" fill="#7A8491" font-size="21">사전 인터뷰 계획서 첫 페이지의 평가 메모를 바탕으로 가독성 있게 재구성</text>
+  </g>
+</svg>
