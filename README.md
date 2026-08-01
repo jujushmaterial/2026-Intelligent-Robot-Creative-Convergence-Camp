@@ -21,6 +21,11 @@ This repository documents my experience at the **2026 Intelligent Robot Consorti
 | Team Result | 은상 · 전체 3위 |
 | Final Concept | 철통이 — 건설현장 안전 로봇 시스템 |
 
+<p align="center">
+  <img src="assets/images/camp/dongwon-leaders-academy.jpg" alt="동원리더스아카데미 전경" width="760">
+</p>
+<p align="center"><sub>동원리더스아카데미 — 캠프 진행 장소</sub></p>
+
 ### Team
 
 - 광운대학교 이주은
@@ -96,7 +101,7 @@ flowchart LR
 
 이 자료는 실제 인터뷰 결과가 아니라 **현장에 나가기 전 준비한 초기 조사 계획**이다. 실제 현장에서는 계획대로 인터뷰를 수행하지 못했고, 그 차이가 문제를 다시 바라보는 계기가 되었다.
 
-- 원본 자료 경로: `documents/interview-plan-original.pdf` *(업로드 예정)*
+- 원본 자료: [`documents/interview-plan-original.pdf`](documents/interview-plan-original.pdf)
 - 상세 정리: [`notes/design-thinking-process.md`](notes/design-thinking-process.md)
 
 ---
@@ -124,6 +129,17 @@ flowchart LR
 인터뷰 답변과 별개로 지역을 이동하며 **외국인 노동자가 많이 보인다는 점**을 관찰했다. 이 관찰은 외국인 노동자의 작업환경과 안전 문제를 추가로 조사하게 된 출발점이 되었다.
 
 > 교통·여가 문제는 주민 인터뷰에서 확인한 내용이고, 외국인 노동자 문제는 팀이 현장에서 별도로 관찰한 내용이다.
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="assets/images/field-research/janghowon-rice-field.jpg" alt="장호원의 논과 농촌 환경"></td>
+    <td width="50%" align="center"><img src="assets/images/field-research/janghowon-traditional-market.jpg" alt="장호원 전통시장"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>현장조사 중 확인한 장호원의 농촌 환경</sub></td>
+    <td align="center"><sub>조사 장소를 변경해 방문한 장호원 전통시장</sub></td>
+  </tr>
+</table>
 
 현장조사 상세 기록은 [`notes/field-research.md`](notes/field-research.md)에 정리한다.
 
@@ -161,6 +177,11 @@ flowchart LR
 ### 철통이: 건설현장 안전 로봇 시스템
 
 철통이는 현장조사와 문제 재정의의 결과로 제안한 **지능형 로봇 기반 건설안전 콘셉트**다. 실제 산업용 로봇을 제작하거나 구조 안전성을 검증한 결과물이 아니라, 현장에서 발견한 문제를 기술 아이디어로 구체화한 디자인씽킹 프로젝트 결과물이다.
+
+<p align="center">
+  <img src="assets/images/project/cheoltongi-concept-overview.jpg" alt="철통이 기술 및 개략도" width="900">
+</p>
+<p align="center"><sub>Cheoltongi Concept Design — 실제 완제품이 아닌 제안 시스템의 콘셉트 렌더링</sub></p>
 
 주요 아이디어는 다음과 같다.
 
@@ -212,11 +233,12 @@ flowchart LR
 
 시뮬레이션은 실제 제품 성능이나 구조 안전성을 검증한 프로그램이 아니라, 아이디어와 작동 흐름을 전달하기 위한 **Concept Simulation**이다.
 
-업로드 후 실행 경로:
+- 소스 진입 파일: [`simulation/cheoltongi-fast30/index.html`](simulation/cheoltongi-fast30/index.html)
+- 실행 안내: [`simulation/cheoltongi-fast30/README.txt`](simulation/cheoltongi-fast30/README.txt)
+- 원본 패키지: [`downloads/cheoltongi-fast30.zip`](downloads/cheoltongi-fast30.zip)
+- 로컬 실행: 압축 해제 후 `run_server.bat` 또는 `python -m http.server 8000`
 
-- Browser entry: `simulation/cheoltongi-fast30/index.html`
-- Original ZIP: `downloads/cheoltongi-fast30.zip`
-- Local server: `python -m http.server 8000`
+> GitHub 파일 화면은 소스 확인용이다. 실제 시뮬레이션은 ZIP을 내려받아 로컬 브라우저에서 실행한다.
 
 ---
 
@@ -230,18 +252,24 @@ flowchart LR
 4. 제품 소개 및 시제품 시안
 5. 질의응답
 
-평가기준은 다음 세 영역을 중심으로 구성되었다.
+평가기준은 다음 네 관점으로 정리했다.
 
-- **주제 적합성:** 로봇 기술 활용, 이천과의 관련성, 지속가능성
-- **문제정의:** 사용자 분석의 정확성, 사용자의 필요 반영
-- **아이디어 참신성:** 아이디어의 매력성과 유용성
+- **로봇 기술 활용:** 문제 해결 과정에 로봇 기술을 적절히 활용했는가
+- **지역성·지속가능성:** 이천 지역과 관련이 있으며 지속가능한 방향인가
+- **사용자 중심 문제정의:** 사용자 분석이 정확하고 실제 필요가 반영되었는가
+- **아이디어의 매력성과 유용성:** 매력적이면서 실제로 유용한 해결책인가
+
+<p align="center">
+  <img src="assets/images/evaluation/evaluation-criteria.svg" alt="창의융합캠프 평가기준" width="900">
+</p>
+<p align="center"><sub>사전 인터뷰 계획서 첫 페이지의 평가 메모를 바탕으로 가독성 있게 재구성</sub></p>
 
 ### Result
 
 > **은상 · 전체 3위**
 
-- 발표자료 경로: `documents/final-presentation-cheoltongi.pdf` *(업로드 예정)*
-- 평가기준 이미지: `assets/images/evaluation/evaluation-criteria.jpg` *(업로드 예정)*
+- 최종 발표자료: [`documents/final-presentation-cheoltongi.pdf`](documents/final-presentation-cheoltongi.pdf)
+- 평가기준 시각자료: [`assets/images/evaluation/evaluation-criteria.svg`](assets/images/evaluation/evaluation-criteria.svg)
 
 ---
 
@@ -284,13 +312,13 @@ flowchart LR
 - 동원리더스아카데미 현장 사진
 - 장호원의 넓은 논과 농촌 환경 사진
 - 장호원 전통시장 사진
-- 실제 인터뷰 계획서와 발표자료 크롭
+- 실제 인터뷰 계획서와 발표자료
 - 철통이 개념 이미지
-- 시뮬레이션 실제 화면
-- 발표 및 평가 사진
+- 시뮬레이션 소스와 원본 ZIP
 
-### Generated Visuals for the Portfolio Website
+### Reconstructed and Future Visuals
 
+- 평가기준 시각자료
 - Design Thinking Journey
 - Initial Plan vs. Field Reality
 - Interview and Observation Flow
@@ -298,7 +326,7 @@ flowchart LR
 - From Field Insight to Cheoltongi
 - Existing Technologies and Concept Integration
 
-실제 사진은 경험의 사실성과 현장성을 보여주고, 생성 이미지는 사진만으로 설명하기 어려운 사고 과정과 논리 흐름을 시각화한다.
+실제 사진은 경험의 사실성과 현장성을 보여주고, 재구성·생성 이미지는 사진만으로 설명하기 어려운 사고 과정과 논리 흐름을 시각화한다.
 
 ---
 
@@ -309,15 +337,27 @@ flowchart LR
 ├─ README.md
 ├─ UPLOAD_GUIDE.md
 ├─ documents/
-│  └─ README.md
+│  ├─ README.md
+│  ├─ interview-plan-original.pdf
+│  └─ final-presentation-cheoltongi.pdf
 ├─ simulation/
 │  └─ cheoltongi-fast30/
-│     └─ README.md
+│     ├─ README.md
+│     ├─ README.txt
+│     ├─ index.html
+│     ├─ app.js
+│     ├─ style.css
+│     └─ run_server.bat
 ├─ downloads/
-│  └─ README.md
+│  ├─ README.md
+│  └─ cheoltongi-fast30.zip
 ├─ assets/
 │  └─ images/
-│     └─ README.md
+│     ├─ camp/dongwon-leaders-academy.jpg
+│     ├─ field-research/janghowon-rice-field.jpg
+│     ├─ field-research/janghowon-traditional-market.jpg
+│     ├─ project/cheoltongi-concept-overview.jpg
+│     └─ evaluation/evaluation-criteria.svg
 └─ notes/
    ├─ design-thinking-process.md
    ├─ field-research.md
@@ -328,13 +368,13 @@ flowchart LR
    └─ reflection-and-limitations.md
 ```
 
-자료 업로드 방법과 정확한 파일명은 [`UPLOAD_GUIDE.md`](UPLOAD_GUIDE.md)를 따른다.
+자료 파일명과 구성 원칙은 [`UPLOAD_GUIDE.md`](UPLOAD_GUIDE.md)에 정리되어 있다.
 
 ---
 
 ## 16. References
 
-- [캠프 모집 공지 — 숭실대학교](https://scatch.ssu.ac.kr/%ea%b3%b5%ec%a7%80%ec%82%ac%ed%95%ad/?f=all&category&slug=2026-%EB%8C%80%ED%95%99%EC%97%B0%ED%95%A9-%EC%B0%BD%EC%9D%98%EC%9C%B5%ED%95%A9%EC%BA%A0%ED%94%84-%EC%B0%B8%EA%B0%80%ED%95%99%EC%83%9D%EA%B3%B5%ED%95%99%EA%B3%84%EC%97%B4-%EB%AA%A8%EC%A7%91&keyword=erica)
+- [캠프 모집 공지 — 숭실대학교](https://scatch.ssu.ac.kr/%ea%b3%b5%ec%a7%80%ec%82%ac%ed%95%ad/?f=all&category&slug=2026-%EB%8C%80%ED%95%99%EC%97%B0%ED%95%A9-%EC%B0%BD%EC%9D%98%EC%9C%A9%ED%95%A9%EC%BA%A0%ED%94%84-%EC%B0%B8%EA%B0%80%ED%95%99%EC%83%9D%EA%B3%B5%ED%95%99%EA%B3%84%EC%97%B4-%EB%AA%A8%EC%A7%91&keyword=erica)
 - [캠프 세부 일정](https://sites.google.com/ssu.ac.kr/2026ssu01/%ED%99%88)
 - [동원리더스아카데미](https://www.dwleadersacademy.co.kr/)
 
