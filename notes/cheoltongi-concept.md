@@ -121,15 +121,16 @@ Robot Sensors
 
 시뮬레이션은 물리적 성능이나 구조 안전성을 계산하는 해석 도구가 아니다. 아이디어와 사용자 시나리오를 설명하기 위한 **visual prototype**이다.
 
+- 소스: [`../simulation/cheoltongi-fast30/`](../simulation/cheoltongi-fast30/)
+- 원본 ZIP: [`../downloads/cheoltongi-fast30.zip`](../downloads/cheoltongi-fast30.zip)
+
 ---
 
 ## 7. Concept Image
 
-업로드 예정 파일:
-
-```text
-assets/images/project/cheoltongi-concept-overview.jpg
-```
+<p align="center">
+  <img src="../assets/images/project/cheoltongi-concept-overview.jpg" alt="철통이 기술 및 개략도" width="900">
+</p>
 
 이미지 표기:
 
