@@ -14,11 +14,10 @@
 
 사전 인터뷰 계획은 주차 정산기나 보행 문제 등 비교적 도심 생활에 가까운 상황을 가정하고 있었다. 그러나 실제 현장은 예상보다 농촌의 특성이 강했고, 이 차이를 직접 확인하면서 초기 가설을 그대로 유지해도 되는지 다시 생각하게 되었다.
 
-관련 이미지 업로드 예정:
-
-```text
-assets/images/field-research/janghowon-rice-field.jpg
-```
+<p align="center">
+  <img src="../assets/images/field-research/janghowon-rice-field.jpg" alt="장호원의 논과 농촌 환경" width="760">
+</p>
+<p align="center"><sub>현장조사 중 직접 확인한 장호원의 농촌 환경</sub></p>
 
 ---
 
@@ -36,11 +35,10 @@ assets/images/field-research/janghowon-rice-field.jpg
 
 팀은 장호원 전통시장으로 이동했다. 시장은 주민을 직접 만날 가능성이 높고, 지역의 생활환경을 관찰하기에 적절한 장소였다.
 
-관련 이미지 업로드 예정:
-
-```text
-assets/images/field-research/janghowon-traditional-market.jpg
-```
+<p align="center">
+  <img src="../assets/images/field-research/janghowon-traditional-market.jpg" alt="장호원 전통시장" width="760">
+</p>
+<p align="center"><sub>초기 조사 장소에서 충분한 인터뷰 대상을 만나지 못한 뒤 이동한 실제 조사 장소</sub></p>
 
 ---
 
